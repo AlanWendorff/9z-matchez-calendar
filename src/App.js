@@ -20,14 +20,14 @@ function App() {
   useEffect(() => {  
     
     var firebaseConfig = {
-      apiKey: "AIzaSyCwVSZ_3nm0FknhJ-8S5aT6iMyi4lu4vto",
-      authDomain: "zez-f8486.firebaseapp.com",
-      databaseURL: "https://zez-f8486.firebaseio.com",
-      projectId: "zez-f8486",
-      storageBucket: "zez-f8486.appspot.com",
-      messagingSenderId: "403629762497",
-      appId: "1:403629762497:web:805e910de4aeff58503140",
-      measurementId: "G-ELE1QMFXQG"
+      apiKey: "apiKey",
+      authDomain: "authDomain",
+      databaseURL: "databaseURL",
+      projectId: "projectId",
+      storageBucket: "storageBucket",
+      messagingSenderId: "messagingSenderId",
+      appId: "appId",
+      measurementId: "measurementId"
     };
     
     // Initialize Firebase
@@ -47,8 +47,8 @@ function App() {
 
     const consultarAPI = async () => {                   //126709 9zTeam id         
       const proxyUrl = 'https://cors-anywhere.herokuapp.com/';                                                                                         //          --- FREE PLAN TOKEN register on pandascore.co and get your free token ---                      
-      const urlUpcoming = 'https://api.pandascore.co/teams/126709/matches?videogame=cs-go&sort=begin_at&filter[finished]=false&filter[draw]=false&filter[forfeit]=false&token=yVPKLDCsTsxGSJcEWb_gbzDiC6NSWVQ3thriZ3Qft_p6lGvLxPc';
-      const urlPast = 'https://api.pandascore.co/teams/126709/matches?videogame=cs-go&filter[finished]=true&token=yVPKLDCsTsxGSJcEWb_gbzDiC6NSWVQ3thriZ3Qft_p6lGvLxPc';
+      const urlUpcoming = 'https://api.pandascore.co/teams/126709/matches?videogame=cs-go&sort=begin_at&filter[finished]=false&filter[draw]=false&filter[forfeit]=false&token=xxxxxxxxxxAPITOKENxxxxxxxxxxx';
+      const urlPast = 'https://api.pandascore.co/teams/126709/matches?videogame=cs-go&filter[finished]=true&token=xxxxxxxxxxAPITOKENxxxxxxxxxxx';
       try {
         const respuestaUpcoming = await fetch(proxyUrl + urlUpcoming);
         const respuestaPast = await fetch(proxyUrl + urlPast);        
