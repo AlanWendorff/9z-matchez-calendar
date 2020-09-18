@@ -3,11 +3,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Descripción del Proyecto
-
-Calendario de partidos futuros y pasados utilizando la API gratis de pandascore.co
-En este proyecto se utilizan Styled Components, Fetch, Custom Hooks y hosting en firebase.
-
+## Resumen descriptivo del proyecto:
+  Calendario de partidos futuros y pasados utilizando la API gratis de pandascore.co
+  En este proyecto se utilizan Styled Components, Fetch, Custom Hooks, hosting en firebase y Realtime database de firebase.
+  
 ¿Que encuentro en la Web?:
 - Fecha y horario de todos los partidos.
 - Torneo.
@@ -18,6 +17,37 @@ En este proyecto se utilizan Styled Components, Fetch, Custom Hooks y hosting en
 - Tarjeta con información del partido pasado.
 - La temática sigue el esquema de colores de 9zteam.
 - Estilos de Materialize.
+ 
+## Descripción completa del proyecto 
+  El proyecto está enfocado para mostrar información sobre los partidos futuros y pasados de 9z Team CS:GO de manera simple.  
+  
+  Lo que podemos observar en la parte superior de la Web es un banner simple con el Logotipo de 9z Team superpuesto a una gradiente hecha con CSS.
+  
+  El fondo de la Web es un patrón hecho con una imagen del mismo logotipo de 9z Team.
+  
+  Por parte del contenido, siempre se mostrará una tarjeta del último partido jugado, en ella podemos ver los logotipos y el nombre de ambos equipos que jugaron el partido, 
+  como es de esperar siempre uno de ellos será 9z Team que se ubicará a la derecha. Del lado izquierdo tendremos el contrincante. 
+  En el centro de esta tarjeta se ve el resultado del partido el cual es aplicado manualmente mediante una base de datos en Firebase, 
+  esto se debe a que el principal data provider con el que trabaja la página, no ofrece resultado numérico del partido.
+  Bajo el resultado tenemos la modalidad en la que se jugó ese partido (Mejor de 1, Mejor de 3, Mejor de 5).
+  En la parte inferior de la tarjeta se encuentra una zona la cual si es presionada se desplegará una sección dentro de la misma tarjeta la cual tendrá información más             específica como el Mapa, Torneo, y la fecha en la cual se jugó el partido.
+  
+  Todos los partidos que se jugarán en el futuro tienen su propia tarjeta. Se organizan de fecha mas cercana (arriba) a mas lejana (abajo). 
+  En cada tarjeta tenemos lo siguiente: 
+  Al lado izquierdo se ubica el logotipo del contricante, a la derecha tenemos la sección de información la cual comienza con el nombre del torneo y bajo él se muestra ambos       equipos que disputaran dicho partido.
+  Como información principal, se muestra la fase del torneo en la que se ubica el partido, fecha y hora en la que se juega y la modalidad (Mejor de 1, Mejor de 3, Mejor de 5).
+  El dia que se juegue el partido, a la derecha de la fecha aparecerá un texto llamativo de color rojo indicando a la persona que el partido se juega "Hoy!"
+  En la parte inferior de la tarjeta se encuentra una zona la cual si es presionada se abrirá el link al streaming oficial del partido, la zona estará activa cuando el partido     comience.
+  
+  En Sudamérica existen muchos torneos, algunos de ellos no estan registrados en la base de datos del data provider por lo tanto, la web no será capáz de mostrar ciertos           partidos.
+  Si este caso ocurre, se mostrará un mensaje informativo al usuario indicando que no hay partidos registrados y bajo el un recuadro con noticias importantes sobre 9z Team.
+  
+  En el caso que falle algo de la Web, cargará normalmente con la diferencia que en lugar de mostrar la información mostrará una tarjeta indicando que hubo un error y un gran     banner diseñado por un fan de 9z Team por el concurso de Wallpapers.
+  
+  En la parte inferior de toda la Web se encuentra un Footer con la seña de los derechos reservados, el data provider con el que trabaja, mi firma y agradecimientos a personas     que aportaron en el proyecto.
+  
+  La Web tiene un formato vertical responsive el cual se adapta facilmente para cualquier dispositivo. 
+  
 
 ## WEB LINK: https://zez-f8486.web.app/ 
 
